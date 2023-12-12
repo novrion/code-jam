@@ -1,14 +1,16 @@
 #!/bin/bash
 
-exe="./run"
+exe="./data/.run"
+exedir="data/.run"
 infile="data/in/in"
 ansfile="data/ans/ans"
-usrfile="data/usr"
+usrfile="data/.usr"
+usrsrc="data/usr.cpp"
 result="data/result"
 
 > $result
 
-n_tests=5
+n_tests=$(cat data/.ntests)
 max_time=1000000000
 score=0
 total_time=0
@@ -26,8 +28,14 @@ function time_exec() {
 
 
 
+# Fetch && Compile usr Code
+mv $1 $usrsrc
+g++ -O2 -std=c++17 -o $exedir $usrsrc
+
+
+
 i=0
-while [ $i -le $n_tests ]; do
+while [ $i -lt $n_tests ]; do
 
 	# Time Executable
 	t=$(time_exec "$infile$i")
@@ -71,3 +79,7 @@ fi
 
 
 echo "score : $score" >> $result
+
+
+# Delete bin
+rm $exedir
