@@ -11,7 +11,7 @@ result="data/result"
 > $result
 
 n_tests=$(cat data/.ntests)
-max_time=1000000000
+max_time=$(cat data/.maxtime)
 score=0
 total_time=0
 
