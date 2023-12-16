@@ -51,8 +51,7 @@ while [ $i -lt $n_tests ]; do
 
 
 	# Compare Answer
-	in="$infile$i"
-	ans=$(diff -wB "$in" "$usrfile")
+	ans=$(diff -wB "$ansfile$i" "$usrfile")
 	
 
 	# Accepted & Wrong Answer
