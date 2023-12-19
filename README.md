@@ -1,4 +1,4 @@
-# Bash scripts for generating and hosting a code jam
+# Bash scripts for hosting code jams
 \
 **Host must still write:** \
     **1)** Code for test cases (executed with comp_test.sh) \
