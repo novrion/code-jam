@@ -29,7 +29,7 @@ echo "$tmp" > $dir/data/in/comp_test.sh
 
 # Ans
 touch $dir/data/ans/comp_ans.cpp
-touch $dir/data/ans/comp_ans.cpp
+touch $dir/data/ans/comp_ans.sh
 tmp="$(cat scripts/comp_ans.sh)"
 echo "$tmp" > $dir/data/ans/comp_ans.sh
 
