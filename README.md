@@ -5,7 +5,7 @@
     **2)** Code for answers to test cases in **data/ans/comp_ans.cpp** (executed with **comp_ans.sh**) \
     **3)** Question \
 \
-Run **new_q.sh** to generate a new code jam \
+Run **new_q.sh** to generate a new code jam question \
 \
 Run **exec.sh** with submission file path as argument to evaluate submission \
 Submission results are written to data/result
