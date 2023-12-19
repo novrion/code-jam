@@ -8,4 +8,4 @@
 Run **new_q.sh** to generate a new code jam \
 \
 Run **exec.sh** with submission file path as argument to evaluate submission \
-Submission results are written to data/result \
+Submission results are written to data/result
