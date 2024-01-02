@@ -1,5 +1,4 @@
 # Bash scripts for hosting code jams
-\
 **Host must write:** \
     **1)** Code for test cases in **data/test/comp_test.cpp** (executed with **comp_test.sh**) \
     **2)** Code for answers to test cases in **data/ans/comp_ans.cpp** (executed with **comp_ans.sh**) \
@@ -8,7 +7,5 @@
 Run **new_q.sh** to generate a new code jam question \
 \
 Run **exec.sh** with submission file path as argument to evaluate submission \
-Submission results are written to data/result
-
-# Important Bug
-**Do not** include whitespaces in question names or directory names
+Submission results are written to **data/result** \
+Edit **data/.maxtime** to alter time limit in nanoseconds (default = 1s)
