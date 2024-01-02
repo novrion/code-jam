@@ -3,10 +3,10 @@
 cd ..
 
 # Input
-echo -n "Directory Name: "
+echo -n "Directory Name (no whitespaces): "
 read dir
 
-echo -n "Question Name: "
+echo -n "Question Name (no whitespaces): "
 read question
 
 echo -n "Number Of Test Cases: "
@@ -48,6 +48,8 @@ echo $"1000000000" > $dir/data/.maxtime
 
 # Question
 touch $dir/$question.txt
+echo "------------------------------ $question ------------------------------" >> "$dir/$question.txt"
+echo "$(cat resources/question.txt)" >> "$dir/$question.txt"
 
 # In && Ans
 i=0
